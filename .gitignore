@@ -2,3 +2,7 @@
 /target
 /bin
 /temp
+/libsproj/actionbarsherlock/bin
+/libsproj/actionbarsherlock/gen
+/libsproj/actionbarsherlock/target
+/libsproj/actionbarsherlock/tmp
