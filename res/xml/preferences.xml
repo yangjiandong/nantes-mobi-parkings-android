@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ~ Copyright 2012 Damien Raude-Morvan, Alvin Berthelot,
+ ~                Guillaume Granger and Nicolas Guillot
+ ~ 
+ ~ Licensed under the Apache License, Version 2.0 (the "License");
+ ~ you may not use this file except in compliance with the License.
+ ~ You may obtain a copy of the License at
+ ~ 
+ ~      http://www.apache.org/licenses/LICENSE-2.0
+ ~ 
+ ~ Unless required by applicable law or agreed to in writing, software
+ ~ distributed under the License is distributed on an "AS IS" BASIS,
+ ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ ~ See the License for the specific language governing permissions and
+ ~ limitations under the License.
+ -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Préférences" >
+
+    <!--
+    !!! Les valeurs par defaut et les clefs doivent être synchronisées
+    avec la classe Preferences.
+    -->
+
+    <ListPreference
+        android:defaultValue="DISTANCE"
+        android:entries="@array/settings_default_sort_labels"
+        android:entryValues="@array/settings_default_sort_ids"
+        android:key="default_sort"
+        android:summary="@string/settings_default_sort_summary"
+        android:title="@string/settings_default_sort" />
+
+    <!-- TODO Damien: Pour le moment, on cache ces préférence 
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="hide_parkings"
+        android:summary="@string/settings_hide_parkings_summary"
+        android:title="@string/settings_hide_parkings" />
+	
+    -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="show_traffic"
+        android:summary="@string/settings_show_traffic_summary"
+        android:title="@string/settings_show_traffic" />
+
+</PreferenceScreen>
