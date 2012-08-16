@@ -12,4 +12,15 @@ nantes Mobi Parkings
 
    actionbarsherlock
 
+   3. RoboGuice 的应用
+
+   ParkingAndroidModule extends AbstractModule
+   configure
+   bind(EquipementManager.class).to(EquipementManagerAndroid.class);
+
+   http://qnlpkuge.iteye.com/blog/1413558
+
+   http://www.imobilebbs.com/wordpress/?tag=roboguice
+
+
    --END
