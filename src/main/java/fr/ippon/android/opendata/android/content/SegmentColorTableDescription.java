@@ -33,7 +33,7 @@ public class SegmentColorTableDescription implements BaseColumns {
     private SegmentColorTableDescription() {
     }
 
-    // Identifiants des colonnes
+    // columns
     public static final String SEGMENT_ID = "id";
     public static final String COLOR_ID = "color_id";
     public static final String LAST_UPDATE_SEG = "last_update";
