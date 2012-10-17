@@ -1,13 +1,13 @@
 /*
 * Copyright 2012 Damien Raude-Morvan, Alvin Berthelot,
 *                Guillaume Granger and Nicolas Guillot
-* 
+*
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
-* 
+*
 *     http://www.apache.org/licenses/LICENSE-2.0
-* 
+*
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -30,17 +30,17 @@ import android.os.Bundle;
 /**
  * On met en place un LocationListener unique pour l'ensemble de l'application,
  * afin de centraliser sa configuration (voir la partie registerGpsUpdate).
- * 
+ *
  * Cette implémentation se charge alors de dispatcher les différents messages au
  * "sous-listener" qui se sont incrits.
- * 
+ *
  * @author Damien Raude-Morvan
  */
 public class LocationChangeDispatcher implements LocationListener {
 
 	@Inject
 	LocationManager locationManager;
-	
+
 	/**
 	 * Liste des listeners auquels on dispatche le message
 	 */
@@ -88,7 +88,7 @@ public class LocationChangeDispatcher implements LocationListener {
 	/**
 	 * Permet d'obtenir la derniere localisation (en utilisant le provider avec
 	 * la meilleure ACCURACY_FINE).
-	 * 
+	 *
 	 * @return Dernière localisation connue (ou rien, en mode avion par exemple)
 	 */
 	protected Location getLastKnownLocation() {

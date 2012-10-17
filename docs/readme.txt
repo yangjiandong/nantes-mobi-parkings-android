@@ -22,5 +22,6 @@ nantes Mobi Parkings
 
    http://www.imobilebbs.com/wordpress/?tag=roboguice
 
+   use : roboguice.xml
 
    --END
